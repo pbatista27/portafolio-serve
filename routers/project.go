@@ -7,8 +7,8 @@ import (
 
 func SetProjectRouter(router *mux.Router) *mux.Router {
 
-	router.HandleFunc("/project/", controllers.ProjectController{}.GetAll).Methods("GET")
-	router.HandleFunc("/project/{id}", controllers.ProjectController{}.GetId).Methods("GET")
+	router.HandleFunc("/project/", controllers.Project{}.GetAll).Methods("GET")
+	router.HandleFunc("/project/{id}", controllers.Project{}.GetId).Methods("GET")
 	return router
 
 }

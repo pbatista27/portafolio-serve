@@ -4,8 +4,8 @@ import (
 	"net/http"
 )
 
-type ProjectController struct{}
+type Project struct{}
 
-func (pc ProjectController) GetAll(w http.ResponseWriter, r *http.Request) {}
+func (pc Project) GetAll(w http.ResponseWriter, r *http.Request) {}
 
-func (pc ProjectController) GetId(w http.ResponseWriter, r *http.Request) {}
+func (pc Project) GetId(w http.ResponseWriter, r *http.Request) {}

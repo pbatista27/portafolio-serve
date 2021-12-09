@@ -4,18 +4,18 @@ import (
 	"net/http"
 )
 
-type InicioController struct{}
+type Inicio struct{}
 
-func (ic InicioController) Inicio(w http.ResponseWriter, r *http.Request) {}
+func (ic Inicio) Inicio(w http.ResponseWriter, r *http.Request) {}
 
-func (ic InicioController) GetContacto(w http.ResponseWriter, r *http.Request) {}
+func (ic Inicio) GetContacto(w http.ResponseWriter, r *http.Request) {}
 
-func (ic InicioController) RegisterContacto(w http.ResponseWriter, r *http.Request) {}
+func (ic Inicio) RegisterContacto(w http.ResponseWriter, r *http.Request) {}
 
-func (ic InicioController) ReadContacto(w http.ResponseWriter, r *http.Request) {}
+func (ic Inicio) ReadContacto(w http.ResponseWriter, r *http.Request) {}
 
-func (ic InicioController) ResponseContacto(w http.ResponseWriter, r *http.Request) {}
+func (ic Inicio) ResponseContacto(w http.ResponseWriter, r *http.Request) {}
 
-func (ic InicioController) Curriculum(w http.ResponseWriter, r *http.Request) {}
+func (ic Inicio) Curriculum(w http.ResponseWriter, r *http.Request) {}
 
-func (ic InicioController) EditCurriculum(w http.ResponseWriter, r *http.Request) {}
+func (ic Inicio) EditCurriculum(w http.ResponseWriter, r *http.Request) {}

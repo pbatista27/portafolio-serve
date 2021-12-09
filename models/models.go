@@ -47,9 +47,10 @@ type SocialNetworks struct {
 }
 
 type Languaje struct {
-	Id   bson.ObjectId `bson:"_id,omitempty" json:"id"`
-	Name string        `bson:"name" json:"name"`
-	Logo string        `bson:"logo" json:"logo"`
+	Id    bson.ObjectId `bson:"_id,omitempty" json:"id"`
+	Name  string        `bson:"name" json:"name"`
+	Logo  string        `bson:"logo" json:"logo"`
+	Statu bool          `bson:"statu" json:"statu"`
 }
 
 type Login struct {
