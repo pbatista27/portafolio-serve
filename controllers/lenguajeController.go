@@ -37,7 +37,7 @@ func (l Lenguaje) Create(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	data, err := data.LanguajeRespository{}.Create(lang)
+	err = data.LanguajeRespository{}.Create(lang)
 
 	if err != nil {
 		http.Error(w, "error al registrar lenguaje "+err.Error(), http.StatusBadRequest)
@@ -46,7 +46,7 @@ func (l Lenguaje) Create(w http.ResponseWriter, r *http.Request) {
 
 	w.WriteHeader(http.StatusCreated)
 	w.Header().Set("Content-type", "Application/json")
-	json.NewEncoder(w).Encode(data)
+	json.NewEncoder(w).Encode(lang)
 
 }
 

@@ -28,16 +28,16 @@ func (lr LanguajeRespository) GetAll() ([]models.Languaje, error) {
 
 }
 
-func (lr LanguajeRespository) Create(lang models.Languaje) (models.Languaje, error) {
+func (lr LanguajeRespository) Create(lang models.Languaje) error {
 
 	con := db.NewDbSession()
 	col := con.DbCollection("languajes")
 	err := col.Insert(lang)
 	if err != nil {
-		return lang, err
+		return err
 	}
 
-	return lang, nil
+	return nil
 }
 
 func (lr LanguajeRespository) Show(id string) (models.Languaje, error) {

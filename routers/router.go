@@ -15,6 +15,10 @@ func InitRoutes() *mux.Router {
 	//router project
 	router = SetProjectRouter(router)
 
+	//router Redes sosciales
+	router = SetRedesSocialesRouter(router)
+
+	//router lenguaje
 	router = SetLenguajeRouter(router)
 
 	return router

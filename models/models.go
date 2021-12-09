@@ -39,11 +39,11 @@ type Project struct {
 }
 
 type SocialNetworks struct {
-	Id     bson.ObjectId `bson:"_id,omitempty" json:"id"`
-	Logo   string        `bson:"logo" json:"logo"`
-	Url    string        `bson:"url" json:"url"`
-	Name   string        `bson:"name" json:"name"`
-	Status bool          `bson:"status" json:"status"`
+	Id    bson.ObjectId `bson:"_id,omitempty" json:"id"`
+	Logo  string        `bson:"logo" json:"logo"`
+	Url   string        `bson:"url" json:"url"`
+	Name  string        `bson:"name" json:"name"`
+	Statu bool          `bson:"statu" json:"statu"`
 }
 
 type Languaje struct {
