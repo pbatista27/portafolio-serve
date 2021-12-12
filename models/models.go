@@ -25,10 +25,9 @@ type User struct {
 // }
 
 type Study struct {
-	Id        bson.ObjectId `bson:"_id,omitempty" json:"id"`
-	Title     string        `bson:"title" json:"title"`
-	YearStart time.Time     `bson:"year_start" json:"year_start"`
-	YearEnd   time.Time     `bson:"year_end" json:"year_end"`
+	Id    bson.ObjectId `bson:"_id,omitempty" json:"id"`
+	Title string        `bson:"title" json:"title"`
+	Year  time.Time     `bson:"year" json:"year"`
 }
 
 type Project struct {

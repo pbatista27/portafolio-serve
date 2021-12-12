@@ -21,5 +21,7 @@ func InitRoutes() *mux.Router {
 	//router lenguaje
 	router = SetLenguajeRouter(router)
 
+	//router estudio
+	router = SetStudyRouter(router)
 	return router
 }

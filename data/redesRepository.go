@@ -46,6 +46,7 @@ func (rp RedesRepository) Show(id string) (models.SocialNetworks, error) {
 
 func (rp RedesRepository) Create(redes models.SocialNetworks) error {
 
+	redes.Id = bson.NewObjectId()
 	con := db.NewDbSession()
 	defer con.Close()
 

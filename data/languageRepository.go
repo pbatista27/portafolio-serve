@@ -32,6 +32,7 @@ func (lr LanguajeRespository) Create(lang models.Languaje) error {
 
 	con := db.NewDbSession()
 	col := con.DbCollection("languajes")
+	lang.Id = bson.NewObjectId()
 	err := col.Insert(lang)
 	if err != nil {
 		return err
